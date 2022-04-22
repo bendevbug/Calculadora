@@ -12,8 +12,7 @@
     <!-- fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=JetBrains+Mono:ital,wght@0,500;1,500&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;1,600&family=Overpass+Mono:wght@600;700&family=Quantico:ital,wght@0,400;0,700;1,400&family=VT323&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
     <!-- ícone -->
     <link rel="shortcut icon" type="imagex/png" href="images/icon.png">
     <!-- Estilo customizado -->
@@ -28,13 +27,43 @@
     <main class="container">
         <div id="calculadora">
             <div class="area-calculo">
-                <input type="text" placeholder="0">
+                <input type="text" placeholder="0" id="resultado">
             </div>
             <div class="buttons">
-                <button type="button">C</button>
-                <button type="button">/</button>
-                <button type="button">X</button>
+                <button type="button" onclick="calcular('acao', 'c')" id="">C</button>
+                <button type="button" onclick="calcular('acao', '.')" id="">.</button>
+                <button type="button" onclick="calcular('acao', '/')">÷</button>
+                <button type="button" onclick="calcular('acao', '*')">X</button>
             </div>
+            <div class="buttons2">
+                <button type="button" onclick="calcular('numero', 9)">9</button>
+                <button type="button" onclick="calcular('numero', 8)">8</button>
+                <button type="button" onclick="calcular('numero', 7)">7</button>
+                <button type="button" onclick="calcular('acao', '-')"> - </button>
+            </div>
+            <div class="buttons3">
+                <button type="button" onclick="calcular('numero', 6)">6</button>
+                <button type="button" onclick="calcular('numero', 5)">5</button>
+                <button type="button" onclick="calcular('numero', 4)">4</button>
+                <button type="button" onclick="calcular('acao', '+')"> + </button>
+            </div>
+            <div class="buttons4">
+                <button type="button" onclick="calcular('numero', 3)">3</button>
+                <button type="button" onclick="calcular('numero', 2)">2</button>
+                <button type="button" onclick="calcular('numero', 1)">1</button>
+                <button type="button" onclick="calcular('numero', 0)">0</button>
+                <button type="button" onclick="calcular('acao', '=')"> = </button>
+            </div>
+            <div id="referencia">
+                <a href="https://github.com/mayzinng">
+                    <i class="fab fa-github" id="icone" onmouseover="aparecerTexto();" onmouseout="reset()" id="div"></i>
+                </a>
+                <a href="https://github.com/mayzinng" class="show" id="div">
+                    MAYZINNG
+                </a>
+            </div>
+
+
         </div>
 
     </main>

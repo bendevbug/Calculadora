@@ -1,8 +1,17 @@
+/* imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+
+/* Geral */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 1px solid green;
+    /* border: 1px solid green; */
+    font-size: 25px;
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
 }
 
 .container {
@@ -16,24 +25,24 @@
 /* Calculadora */
 
 #calculadora {
-    background-color: #1D055F;
+    background-color: #0b0544;
     width: 50vh;
-    height: 70vh;
+    height: 50vh;
     margin: 15vh auto;
     border-radius: 1.2vh;
 }
 
 .area-calculo {
-    background-color: red;
     display: flex;
     float: right;
 }
 
 .area-calculo input {
-    background-color: #D9CDF9;
-    margin: 30px 20px 20px 20px;
+    color: #000;
+    background-color: #d2daff;
+    margin: 30px 35px 20px 20px;
     float: right;
-    width: 45.8vh;
+    width: 43vh;
     height: 5vh;
     padding: 1.2vh;
     text-align: end;
@@ -42,30 +51,177 @@
 }
 
 
+/* Botões geral */
+
+button {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(252, 148, 52);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(247, 178, 114);
+    border-left: 5px solid rgb(219, 122, 30);
+    box-shadow: 4px 1px 10px 0px #af5e01;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+
 /* botões */
 
 .buttons {
-    background-color: purple;
-    display: flex;
     height: 6vh;
 }
 
 .buttons button:first-child {
-    background-color: gray;
-    display: flex;
-    width: 23vh;
+    width: 9.65vh;
     height: 5vh;
-    margin: auto auto;
+    margin: 20px 5px auto 30px;
     justify-content: center;
     align-items: center;
 }
 
 .buttons button {
-    background-color: purple;
-    display: flex;
-    width: 10vh;
+    width: 9.65vh;
     height: 5vh;
     margin: 3px 5px 5px 5px;
     justify-content: center;
     align-items: center;
+}
+
+.buttons2 {
+    display: block;
+    margin: inherit;
+    height: 6vh;
+    margin-top: 120px;
+    margin-bottom: 10px;
+}
+
+.buttons2 button:first-child {
+    width: 10vh;
+    height: 5vh;
+    margin: 0px 0px auto 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons2 button {
+    margin: inherit;
+    width: 9.65vh;
+    height: 5vh;
+    margin: 3px 5px 5px 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons3 {
+    display: block;
+    margin: inherit;
+    height: 6vh;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.buttons3 button:first-child {
+    width: 10vh;
+    height: 5vh;
+    margin: 0px 0px auto 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons3 button {
+    margin: inherit;
+    width: 9.65vh;
+    height: 5vh;
+    margin: 3px 5px 5px 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons4 {
+    display: block;
+    margin: inherit;
+    height: 6vh;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.buttons4 button:first-child {
+    width: 10vh;
+    height: 5vh;
+    margin: 0px 0px auto 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons4 button:last-child {
+    width: 5vh;
+    height: 5vh;
+    margin: 0px 0px auto 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons4 button {
+    margin: inherit;
+    width: 7.6vh;
+    height: 5vh;
+    margin: 3px 5px 5px 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ícone */
+
+a {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+a:hover {
+    color: rgb(255, 153, 0);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    text-decoration: none;
+}
+
+i {
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+/* Efeitos */
+
+.show {
+    display: none;
+}
+
+.show-text {
+    display: flex;
+    margin-left: 5px;
+}
+
+#referencia {
+    display: inline-flex;
+    margin: 0px 0px 0px 6rem;
 }
