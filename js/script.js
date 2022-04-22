@@ -16,21 +16,19 @@ function calcular(tipo, valor) {
         var valor_campo = eval(document.getElementById('resultado').value);
 
         document.getElementById('resultado').value = valor_campo;
+        // console.log(valor_campo);
 
     } else if (tipo === 'numero') {
         var valor_campo = document.getElementById('resultado').value;
 
-        document.getElementById('resultado').value += valor;
-        document.getElementById('resultado').value = valor_campo + valor;
+        document.getElementById('resultado').value = valor;
 
+        console.log(document.getElementById('resultado').value = valor_campo + valor);
 
     }
 }
 
 function aparecerTexto() {
-    // document.getElementById("div").innerHTML = "";
-    // var texto = document.getElementById("div");
-    // texto.style.fontFamily = 'Teko';
 
     var x = document.getElementById("div");
     if (x.className === "show") {
@@ -40,13 +38,9 @@ function aparecerTexto() {
     }
     document.getElementById("div").innerHTML = "MAYZINNG";
 
-
-
-    console.log('oi');
 }
 
 function reset() {
     document.getElementById("div").innerHTML = "";
-    console.log('oi2');
 
 }
